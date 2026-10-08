@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Mock (offline, no backend)",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--dart-define=USE_MOCK_DATA=true"]
+    },
+    {
+      "name": "Emulator + local backend (10.0.2.2)",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--dart-define=API_BASE_URL=http://10.0.2.2:8000"]
+    },
+    {
+      "name": "Desktop/Web + local backend (localhost)",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--dart-define=API_BASE_URL=http://localhost:8000"]
+    },
+    {
+      "name": "Physical device (LAN IP — edit me)",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--dart-define=API_BASE_URL=http://192.168.1.100:8000"]
+    }
+  ]
+}
